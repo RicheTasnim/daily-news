@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.google-font {
+    font-family: 'Carter One', cursive;
+}
+
+.list-styles {
+    list-style: none;
+}
+
+.profile-img {
+
+    width: 30px;
+    border: 1px solid black;
+}
+
+hr {
+    border: 1px solid black;
+}
