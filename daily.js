@@ -28,3 +28,18 @@ const newsCategories = async () => {
   }
   
   newsCategories()  
+
+  const newsPost = async (eachPost) => {
+    loader(true)
+    const url = `https://openapi.programming-hero.com/api/news/category/${eachPost}`;
+  
+    try {
+      const res = await fetch(url);
+      const postData = await res.json();
+  
+      displayNews(postData.data);
+    }
+    catch (error) {
+      console.log(error);
+    }
+  };  
