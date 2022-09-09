@@ -20,7 +20,7 @@
             <div class="d-flex">
                 <div>
                     <ul class="d-flex list-styles  ">
-                        <li class="news-btn px-2 py-1 rounded fw-semibold text-white">News</li>
+                        <li class="newsBtn px-2 py-1 rounded fw-semibold text-white">News</li>
                         <li class="ms-3"><a href="blog.html">Blog</a></li>
 
 
@@ -47,10 +47,57 @@
 
     <!-- header section end  -->
 
+
+    <!-- spinner section  -->
+
+    <div id="loadingContainer" class="d-none">
+        <div class="d-flex justify-content-center py-5">
+            <div class="spinner-border my-5 text-primary" role="status">
+                <span class="visually-hidden">Loading.....</span>
+            </div>
+        </div>
+    </div>
+
     <!-- main section start -->
 
+    <main>
+        <section class="mt-4">
+            <div class="input-group input-group-lg">
+                <input id="postFound" type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg" />
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="input-group mb-3 d-flex justify-content-between">
+                <div>
+                    Sorted By View's:
+                    <button class="bg-white btn dropdown-toggle ps-3 pe-4" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Default</a></li>
 
-    
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn btn-secondary ps-5 pe-5 btnBg" type="button">
+                        Today’s pick
+                    </button>
+                    <button class="btn btn-outline-secondary ps-5 pe-5" type="button">
+                        Trending's
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div id="displayNewsPost" class="mt-5">
+
+            </div>
+        </section>
+    </main>
 
     <!-- main section end -->
     
