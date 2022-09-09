@@ -31,18 +31,6 @@ hr {
     background-color: #4158CA;
 }
 
-.btnBg {
-    background-color: #5D5FEF;
-}
-
-.categories-hovers {
-    color: #5D5FEF;
-}
-
-.categories-hovers:hover {
-    color: #4158CA;
-}
-
 @media screen and (max-width: 767px) {
     .card-img {
         width: 100%;

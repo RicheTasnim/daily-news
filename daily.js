@@ -127,3 +127,20 @@ const newsCategories = async () => {
   </div>`;
       displayPost.appendChild(displayPostDiv);
     });
+
+
+    const PostFound = document.getElementById('postFound')
+    for (let i = 0; i < cardPosts.length; i++) {
+      PostFound.value = (i + 1) + ' ' + 'items here'
+    }
+    loader(false)
+  };
+  const loader = isLoading => {
+    const loadingContainer = document.getElementById('loadingContainer');
+    if (isLoading) {
+      loadingContainer.classList.remove('d-none')
+    }
+    else {
+      loadingContainer.classList.add('d-none')
+    }
+  }
